@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="verificar.php" method="post">
+            <div>
+                <h1>
+                    CADASTRAR
+                </h1>
+            </div>
+            <div class="container-nome-sobrenome">
+                <div class="conteiner-nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome">
+                </div>
+                <div class="conteiner-sobrenome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome">
+                </div>
+            </div>
+            <div class="container-email-telefone">
+                <div class="conteiner-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="conteiner-telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" name="telefone">
+                </div>
+            </div>
+            <div class="container-endereco">
+                <div class="conteiner-tipo">
+                    <label for="tipo">Tipo</label>
+                    <input type="text" name="tipo">
+                </div>
+                <div class="conteiner-logradouro">
+                    <label for="logradouro">logradouro</label>
+                    <input type="text" name="logradouro">
+                </div>
+                <div class="conteiner-numero">
+                    <label for="numero">numero</label>
+                    <input type="number" name="numero">
+                </div>
+            </div>
+            <div class="conteiner-genero">
+                <label for="">Gênero</label>
+                <div class="conteiner-opcoes-genero">
+                    <input type="checkbox" name="male" id="">
+                    <label for="male">Masculino</label>
+
+                    <input type="checkbox" name="female" id="">
+                    <label for="female">Feminino</label>
+
+                    <input type="checkbox" name="outros" id="">
+                    <label for="female">Outros</label>
+                </div>
+            </div>
+            <div class="conteiner-senha">
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha">
+                </div>
+                <div>
+                    <label for="senha">Confirme senha</label>
+                    <input type="password" name="confirme-senha">
+                </div>
+            </div>
+            <div class="conteiner-botoes">
+                <button class="enviar" type="submit"> Enviar </button>   
+                <button class="limpar" type="submit"> Limpar </button>   
+            </div>
+        </form>
+    </main>
+</body>
+</html>

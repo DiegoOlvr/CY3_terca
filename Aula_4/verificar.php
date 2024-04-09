@@ -22,10 +22,18 @@ if (
     $numero = $_POST['numero'];
     $senha = $_POST['senha'];
 
-    $sql_query = "INSERT INTO clientes ('nome', 'sobrenome', 'email', 'telefone', 'tipo', 'logradouro', 'numero', 'senha')
-    VALUES ($nome, $sobrenome,$email, $telefone, $tipo, $logradouro, $numero, $senha)
-    ";
+    $sql_query = "INSERT INTO `clientes` (`nome`, `sobrenome`, `email`, `telefone`, `tipo`, `logradouro`, `numero`, `senha`) VALUES ( $nome, $sobrenome, $email, $telefone, $tipo, $logradouro, $numero, $senha)";
 
     $enviar = $mysqli->query($sql_query);
+
+    if($enviar === TRUE)
+    {
+        echo 'Cadastro realizado com sucesso!!!';
+    }
+    else
+    {
+        echo 'Deu ruim';
+        echo  $mysqli->error;
+    }
 }
 ?>
